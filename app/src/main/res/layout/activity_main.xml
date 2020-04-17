@@ -29,7 +29,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="#DFDBDB"
+        android:background="@drawable/round"
         android:backgroundTint="#DFDBDB"
         android:drawableLeft="@drawable/icon_email24"
         android:drawablePadding="8dp"
@@ -37,10 +37,10 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingLeft="8dp"
+        android:paddingLeft="16dp"
         app:layout_constraintBottom_toTopOf="@+id/etSIPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -51,7 +51,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:background="#DFDBDB"
+        android:background="@drawable/round"
         android:backgroundTint="#DFDBDB"
         android:drawableLeft="@drawable/icon_password24"
         android:drawablePadding="8dp"
@@ -59,7 +59,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="8dp"
+        android:paddingLeft="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tvForgotPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,7 +73,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="32dp"
-        android:background="#143981"
+        android:backgroundTint="#143981"
         android:drawableLeft="@drawable/icon_rightarrow"
         android:drawableTint="#FFFFFF"
         android:paddingLeft="120dp"
@@ -84,7 +84,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSICreateAcc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword"
+        android:background="@drawable/round"/>
 
     <Button
         android:id="@+id/btnSICreateAcc"
@@ -99,14 +100,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSISignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSISignIn"
+        android:background="@drawable/round"
+        android:backgroundTint="#DFDBDB"/>
 
     <TextView
         android:id="@+id/tvForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Forgot password?"
+        android:text="Forgot password? Click HERE!"
         app:layout_constraintBottom_toTopOf="@+id/btnSISignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

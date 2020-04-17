@@ -7,17 +7,21 @@ import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MenuActivity extends AppCompatActivity {
     ChipNavigationBar bottomNav;
     FragmentManager fragmentManager;
     private static final String TAG=MenuActivity.class.getSimpleName();
+   // private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+       // firebaseAuth=FirebaseAuth.getInstance();
 
         bottomNav=findViewById(R.id.bottom_nav);
         if (savedInstanceState==null){
