@@ -36,11 +36,11 @@ public class CreateAccActivity extends AppCompatActivity implements AdapterView.
         setContentView(R.layout.activity_create_acc);
         setupUIViews();
 
-        /*Spinner spinner = findViewById(R.id.spinnerGender);
+        Spinner spinner = findViewById(R.id.spinnerGender);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.gender, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);*/
+        spinner.setOnItemSelectedListener(this);
 
         firebaseAuth=FirebaseAuth.getInstance();
 
